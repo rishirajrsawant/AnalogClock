@@ -21,7 +21,7 @@ public class ColorPickerActivity extends AppCompatActivity {
     int clockColor;
     int clkhandColor;
 
-    public static final String clock = "clockwork";
+    public static final String clock = "clock";
     public static final String basicColor = "basicColor";
     public static final String handColor = "handColor";
 
