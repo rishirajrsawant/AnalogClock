@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center|center_horizontal|center_vertical"
+    android:background="#000000"
+    android:gravity="center_horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <com.example.analogclock.CustomAnalogClock
+        android:id="@+id/canvas"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:foregroundGravity="center" />
+
+    <Button
+        android:id="@+id/timer"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/canvas"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/ic_timer_white_72dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:gravity="center|center_horizontal|center_vertical" />
+
+</RelativeLayout>

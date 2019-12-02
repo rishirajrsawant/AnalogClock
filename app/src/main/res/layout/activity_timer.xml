@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:hapticFeedbackEnabled="false"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/titleMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Enter Minutes"
+        android:textColor="#4CAF50"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/enterMinutes"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#4CAF50"
+            android:ems="10"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            android:gravity="center"
+            android:hint="@string/enter_minutes"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textAlignment="center"
+            android:textColor="#4CAF50"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#635F5F" />
+
+        <Button
+            android:id="@+id/startTimer"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterMinutes"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_play_arrow_white_24dp" />
+
+        <Button
+            android:id="@+id/resetTimer"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterMinutes"
+            android:layout_margin="20dp"
+            android:layout_toRightOf="@+id/startTimer"
+            android:text="@string/reset_timer"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/countdownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/timer"
+        android:textColor="#4CAF50"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
